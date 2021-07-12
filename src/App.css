@@ -1,0 +1,311 @@
+.App {
+  text-align: center;
+}
+
+.employId{
+  /* color: black; */
+  background-color: red !important;
+  position: relative;
+
+}
+
+.employName {
+  
+  /* color:green; */
+  background-color: red !important;
+  position: relative;
+}
+
+
+.employMobile {
+  
+  /* color: red; */
+  background-color: red !important;
+  position: relative;
+}
+.employEmail {
+
+  background-color: red !important;
+  position: relative;
+
+}
+.employDepartmentName {
+
+  background-color: red !important;
+  position: relative;
+}
+
+/* for employId */
+
+.employId:hover::before,
+.employId::after {
+  --scale: 0;
+  --tooltip-color: green;
+  --arrow-size: 10px;
+
+  position: absolute;
+  top: -.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+
+  
+}
+
+.employId::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+  content: attr(data-tooltip).hide;
+  /* content: ''; */
+  color: white;
+  padding: .5rem;
+  border-radius: .3rem;
+  text-align: center;
+  width: max-content;
+  background: var(--tooltip-color);
+}
+
+.employId:hover::before {
+  content: attr(data-tooltip);
+
+}
+
+.employId:hover::before,
+.employId:hover::after {
+  --scale: 1;
+  /* content: attr(data-tooltip); */
+}
+
+.employId::after {
+  
+  --translate-y: calc(-1 * var(--arrow-size));
+
+
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}
+
+
+
+/* for employName */
+
+
+.employName:hover::before,
+.employName::after {
+  --scale: 0;
+  --tooltip-color: green;
+  --arrow-size: 10px;
+
+  position: absolute;
+  top: -.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+
+  
+}
+
+.employName::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+  content: attr(data-tooltip).hide;
+  /* content: ''; */
+  color: white;
+  padding: .5rem;
+  border-radius: .3rem;
+  text-align: center;
+  width: max-content;
+  background: var(--tooltip-color);
+}
+
+.employName:hover::before {
+  content: attr(data-tooltip);
+
+}
+
+.employName:hover::before,
+.employName:hover::after {
+  --scale: 1;
+  /* content: attr(data-tooltip); */
+}
+
+.employName::after {
+  
+  --translate-y: calc(-1 * var(--arrow-size));
+
+
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}
+
+
+
+/* for EmployMobile */
+
+
+.employMobile:hover::before,
+.employMobile::after {
+  --scale: 0;
+  --tooltip-color: green;
+  --arrow-size: 10px;
+
+  position: absolute;
+  top: -.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+
+  
+}
+
+.employMobile::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+  content: attr(data-tooltip).hide;
+  /* content: ''; */
+  color: white;
+  padding: .5rem;
+  border-radius: .3rem;
+  text-align: center;
+  width: max-content;
+  background: var(--tooltip-color);
+}
+
+.employMobile:hover::before {
+  content: attr(data-tooltip);
+
+}
+
+.employMobile:hover::before,
+.employMobile:hover::after {
+  --scale: 1;
+  /* content: attr(data-tooltip); */
+}
+
+.employMobile::after {
+  
+  --translate-y: calc(-1 * var(--arrow-size));
+
+
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}
+
+
+
+
+/* for Employ Email */
+
+
+.employEmail:hover::before,
+.employEmail::after {
+  --scale: 0;
+  --tooltip-color: green;
+  --arrow-size: 10px;
+
+  position: absolute;
+  top: -.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+
+  
+}
+
+.employEmail::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+  content: attr(data-tooltip).hide;
+  /* content: ''; */
+  color: white;
+  padding: .5rem;
+  border-radius: .3rem;
+  text-align: center;
+  width: max-content;
+  background: var(--tooltip-color);
+}
+
+.employEmail:hover::before {
+  content: attr(data-tooltip);
+
+}
+
+.employEmail:hover::before,
+.employEmail:hover::after {
+  --scale: 1;
+  /* content: attr(data-tooltip); */
+}
+
+.employEmail::after {
+  
+  --translate-y: calc(-1 * var(--arrow-size));
+
+
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}
+
+
+
+
+/* for employDepartmentName */
+
+
+.employDepartmentName:hover::before,
+.employDepartmentName::after {
+  --scale: 0;
+  --tooltip-color: green;
+  --arrow-size: 10px;
+
+  position: absolute;
+  top: -.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+
+  
+}
+
+.employDepartmentName::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+  content: attr(data-tooltip).hide;
+  /* content: ''; */
+  color: white;
+  padding: .5rem;
+  border-radius: .3rem;
+  text-align: center;
+  width: max-content;
+  background: var(--tooltip-color);
+}
+
+.employDepartmentName:hover::before {
+  content: attr(data-tooltip);
+
+}
+
+.employDepartmentName:hover::before,
+.employDepartmentName:hover::after {
+  --scale: 1;
+  /* content: attr(data-tooltip); */
+}
+
+.employDepartmentName::after {
+  
+  --translate-y: calc(-1 * var(--arrow-size));
+
+
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}
+
